@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return \Redirect::to(url('login'));
 });
 
 Route::get('/{vue_capture?}', function () {
